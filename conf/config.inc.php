@@ -13,7 +13,7 @@
     $conf = [];
 
     if (
-        false === getenv('DB_HOST')
+        false !== getenv('DB_HOST')
         || !is_dir($autoloadDir)
     ) {
         $configs = [ $defaultServerConfig ];
